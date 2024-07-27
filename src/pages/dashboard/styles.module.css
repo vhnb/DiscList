@@ -1,0 +1,103 @@
+.container{
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background-color: #111;
+}
+
+.container .contentDashboard{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1100px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.container .contentDashboard a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.container .contentDashboard form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.container .contentDashboard form input{
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    margin-right: 10px;
+    padding: 14px 16px;
+    font-size: 16px;
+    background-color: #ffffff0a;
+    border: 1px solid #ffffff28;
+}
+
+.container .contentDashboard form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46.5px;
+    width: 46.5px;
+    border-radius: 8px;
+    border: none;
+    background-color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container .contentDashboard .contentTasks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container .contentDashboard .cardTask{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+    background-color: #ffffff0a;
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: #fff;
+    font-size: 16px;
+    border-left: 8px solid #56c852;
+    margin: 15px 0px 0px 0px;
+    transition: 0.3s;
+}
+
+.container .contentDashboard .cardTask p{
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container .contentDashboard .cardTask .iconDeleteTask{
+    cursor: pointer;
+}
+
+.container .contentDashboard .cardTask:has(.iconDeleteTask:hover) {
+    border-left: 8px solid #e64e4c;
+}
