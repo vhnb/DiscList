@@ -43,4 +43,4 @@ async def on_ready():
     await bot.change_presence(activity=discord.Game("Your easy tasks"))
     print("On")
 
-bot.run('MTI2NTg4MjI3ODIxOTg3NDMwNA.G8ZpiX.qAIQGnIHtjmH6W1TRaZpk3zoyCVVGXVBr1HeFU')
+bot.run('')
